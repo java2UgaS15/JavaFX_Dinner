@@ -57,8 +57,8 @@ public class RadioButtonCircle extends Application {
 		RadioButton rbBlue = new RadioButton("blue");
 		rbBlue.setUserData(Color.BLUE);
 		
-		//RadioButton rbPink = new RadioButton("pink");
-		//rbPink.setUserData(new Color(1, 0, 1, 1));
+		RadioButton rbPink = new RadioButton("pink");
+		rbPink.setUserData(new Color(1, 0, 1, 1));
 		
 		//Set rbRed, rbOrange, rbBlue, rbGreen to be in a toggle group.
 		//So that only one item can be selected.
@@ -69,7 +69,7 @@ public class RadioButtonCircle extends Application {
 		rbRed.setToggleGroup(group);
 		rbOrange.setToggleGroup(group);
 		rbBlue.setToggleGroup(group);
-		//rbPink.setToggleGroup(group);
+		rbPink.setToggleGroup(group);
 		
 		//Draw a rectangle object r.
 		//Since r needs to be used inside action listener,
@@ -125,7 +125,7 @@ public class RadioButtonCircle extends Application {
 		root.add(rbRed, 0, 4);
 		root.add(rbOrange, 1, 4);
 		root.add(rbBlue, 2, 4);
-		//root.add(rbPink, 3, 4);
+		root.add(rbPink, 3, 4);
 		
 		//Create a scene with grid pane root as its root node,
 		//the scene is 300 pixels wide and 200 pixels high.
